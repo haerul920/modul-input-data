@@ -9,7 +9,7 @@ setelah menjalankan perintah tersebut file main.exe akan muncul.
 kemudian jalankan kode ini di terminal
 
 ```bash
-./main.exe 1 3 Tambah Data Matakuliah (matakuliah.csv)
+./main.exe 1 # Tambah Data Matakuliah (matakuliah.csv)
 ./main.exe 2 # Tambah Data Mahasiswa (mahasiswa.csv)\
 ./main.exe 3 # Tambah Data KRS (krs.csv)
 ./main.exe 4 # Cari KRS Mahasiswa (berdasarkan NIM atau Nama)
