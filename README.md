@@ -1,22 +1,74 @@
-# Cara Menjalankan Kode
+<h1 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&pause=1000&color=33FF33&center=true&vCenter=true&width=500&lines=Sistem+Manajemen+KRS" alt="Typing SVG" />
+</h1>
 
-pull kodenya di pc kamu lalu buka terminal di vs code dengan menjalankan perintah berikut
+<h3 align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=00BFFF&center=true&vCenter=true&width=600&lines=Sebuah+proyek+konsol+C+untuk+mengelola+data+Mahasiswa%2C+Matakuliah%2C+dan+KRS" alt="Typing SVG" />
+</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C Language" />
+</p>
+
+Proyek ini adalah sistem manajemen akademik sederhana berbasis konsol yang ditulis dalam bahasa C. Program ini memungkinkan pengguna untuk mengelola data master **Mahasiswa** dan **Matakuliah**, serta mencatat **Kartu Rencana Studi (KRS)**. Semua data disimpan secara persisten dalam file `.csv`.
+
+---
+
+## ✨ Fitur Utama
+
+- 👨‍🎓 **Manajemen Mahasiswa:**
+  - Tambah data mahasiswa baru (NIM, Nama, Prodi, Fakultas, Angkatan, IPK).
+  - Hapus data mahasiswa berdasarkan NIM (dengan konfirmasi).
+- 📚 **Manajemen Matakuliah:**
+  - Tambah data matakuliah baru (ID MK, Nama, SKS).
+- ✍️ **Manajemen KRS:**
+  - Tambah data KRS untuk menghubungkan mahasiswa dengan matakuliah yang diambil.
+- 🔍 **Pencarian Cerdas:**
+  - Cari data KRS lengkap mahasiswa berdasarkan **NIM** atau **Nama**.
+  - Menampilkan detail mahasiswa (IPK, Fakultas) dan daftar matakuliah yang diambil (dengan total SKS).
+- 📄 **Ekspor ke CSV:**
+  - Hasil pencarian KRS secara otomatis diekspor ke file `.csv` terpisah (misal: `KRS_D121251094.csv`) untuk pelaporan.
+- 💾 **Penyimpanan Persisten:**
+  - Semua data disimpan (mode _append_) di file `mahasiswa.csv`, `matakuliah.csv`, dan `krs.csv`.
+- 🛡️ **Validasi Duplikat:**
+  - Sistem secara otomatis mencegah data duplikat (NIM, ID MK, dan entri KRS) untuk menjaga integritas data.
+
+---
+
+## 📂 Struktur Proyek
+
+Berikut adalah tampilan struktur file dan file-file `.csv` yang dihasilkan oleh program.
+
+<p align="center">
+  <img src="image_61b0eb.png" alt="Struktur Proyek" width="400"/>
+</p>
+
+---
+
+## 🚀 Memulai
+
+Pastikan Anda memiliki compiler C (seperti **gcc**) yang terinstal di sistem Anda.
+
+1.  Buka terminal di direktori utama proyek.
+2.  Kompilasi program menggunakan perintah berikut:
+
+    ```bash
+    gcc main.c filedata.c -o main.exe
+    ```
+
+3.  Setelah perintah di atas berhasil, file `main.exe` akan dibuat di direktori Anda.
+
+---
+
+## ⌨️ Cara Menjalankan
+
+Jalankan program dari terminal dengan perintah `./main.exe` diikuti dengan nomor menu yang diinginkan.
 
 ```bash
-gcc main.c filedata.c -o main.exe
+./main.exe 1  # 📚 Tambah Data Matakuliah
+./main.exe 2  # 👨‍🎓 Tambah Data Mahasiswa
+./main.exe 3  # ✍️  Tambah Data KRS
+./main.exe 4  # 🔍 Cari KRS Mahasiswa (dan Ekspor ke CSV)
+./main.exe 5  # ❌ Hapus Data Mahasiswa
+./main.exe 6  # 🐞 Tampilkan isi file (Mode Debug)
 ```
-setelah menjalankan perintah tersebut file main.exe akan muncul.
-kemudian jalankan kode ini di terminal
-
-```bash
-./main.exe 1 # Tambah Data Matakuliah (matakuliah.csv)
-./main.exe 2 # Tambah Data Mahasiswa (mahasiswa.csv)\
-./main.exe 3 # Tambah Data KRS (krs.csv)
-./main.exe 4 # Cari KRS Mahasiswa (berdasarkan NIM atau Nama)
-./main.exe 5 # Hapus Data Mahasiswa (berdasarkan NIM)
-./main.exe 6 # Tampilkan isi file (Debug)
-```
-jalankan satu per satu main.exe
-
-![Thank You](https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=28&pause=1000&color=00FF00&center=true&vCenter=true&width=435&lines=thank+you)
-
